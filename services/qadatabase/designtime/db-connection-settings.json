@@ -1,0 +1,23 @@
+{
+  "username" : "root",
+  "password" : "7b6a43524a2621157e686d791a50777e47367b6a3120",
+  "url" : "jdbc:mysql://ec2-54-87-2-36.compute-1.amazonaws.com:3306/qadatabase?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "qadatabase",
+  "packageName" : "com.test_21.qadatabase",
+  "dbType" : "MySQL",
+  "host" : "ec2-54-87-2-36.compute-1.amazonaws.com",
+  "dbName" : "qadatabase",
+  "port" : "3306",
+  "schemaName" : "qadatabase",
+  "tableFilter" : [ "channels", "customers", "follow_ups", "leads", "locations", "products", "quotes", "reps", "sales", "states", "TABLE1", "TABLE2", "TABLE3", "TABLE4", "TABLE5", "TABLE6", "TABLE7", "TABLE19", "TABLE18", "TABLE21", "TABLE20" ],
+  "schemaFilter" : [ ".*" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "readOnly" : false
+}

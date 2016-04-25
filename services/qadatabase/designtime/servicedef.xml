@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="qadatabase" type="DataService" springFile="qadatabase.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.test_21.qadatabase.Sales">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="quoteId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="sales" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="isRenewal" typeRef="java.lang.Boolean" allowNull="true"/>
+            <element name="entryDate" typeRef="java.util.Date" allowNull="true"/>
+            <element name="productId" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Customers">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stateId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Products">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.FollowUps">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="quoteId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="entryDate" typeRef="java.util.Date" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table18">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table19">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Locations">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stateId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="cityName" typeRef="java.lang.String" allowNull="true"/>
+            <element name="longitude" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="latitude" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Quotes">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="estimatedSale" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="repId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="leadId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="entryDate" typeRef="java.util.Date" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.States">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+            <element name="abbrev" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Channels">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table6">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table5s" typeRef="com.test_21.qadatabase.Table5" isList="true" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table21">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table7">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="myKey" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table20">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table4">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table3" typeRef="com.test_21.qadatabase.Table3" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table5">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table6" typeRef="com.test_21.qadatabase.Table6" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Leads">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="customerId" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="entryDate" typeRef="java.util.Date" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table2">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table1" typeRef="com.test_21.qadatabase.Table1" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table3">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table4s" typeRef="com.test_21.qadatabase.Table4" isList="true" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Reps">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="channelType" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table2" typeRef="com.test_21.qadatabase.Table2" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>
