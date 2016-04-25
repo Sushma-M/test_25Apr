@@ -8,6 +8,9 @@
   "name" : "Main",
   "type" : "PAGE"
 }, {
+  "name" : "Page1",
+  "type" : "PAGE"
+}, {
   "name" : "footer",
   "type" : "FOOTER"
 }, {
