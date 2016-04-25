@@ -14,7 +14,13 @@
   "name" : "Page2",
   "type" : "PAGE"
 }, {
+  "name" : "PAge3",
+  "type" : "PAGE"
+}, {
   "name" : "Page1",
+  "type" : "PAGE"
+}, {
+  "name" : "Page2",
   "type" : "PAGE"
 }, {
   "name" : "footer",
