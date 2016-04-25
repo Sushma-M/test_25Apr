@@ -60,12 +60,12 @@
             <element name="table5s" typeRef="com.test_21.qadatabase.Table5" isList="true" allowNull="true"/>
             <element name="column2" typeRef="java.lang.Integer" allowNull="true"/>
         </dataobject>
+        <dataobject javaType="com.test_21.qadatabase.Table20">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
         <dataobject javaType="com.test_21.qadatabase.Table7">
             <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
             <element name="myKey" typeRef="java.lang.Integer" allowNull="true"/>
-        </dataobject>
-        <dataobject javaType="com.test_21.qadatabase.Table20">
-            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.test_21.qadatabase.Table4">
             <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
